@@ -1,14 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-
+    [Header("--TOP AYARLARI")]
     public GameObject[] Toplar;
     public GameObject FirePoint;
     public float TopGucu;
     int AktifTopIndex;
+    [Header("LEVEL AYARLARI")]
+    [SerializeField] private int HedefTopSayisi;
+    [SerializeField] private int MevutTopSayisi;
+    int GirenTopSayisi;
+    public Slider LevelSlider;
+    public TextMeshProUGUI KalanTopSayisi_Text;
+
 
     // Start is called before the first frame update
     void Start()
