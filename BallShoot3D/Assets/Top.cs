@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Top : MonoBehaviour
 {
+    public GameManager _GameManager;
     Rigidbody rb;
 
 
@@ -23,6 +24,7 @@ public class Top : MonoBehaviour
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
             gameObject.SetActive(false);
+            _GameManager.TopGirdi();
            
 
         }else if (other.CompareTag("AltObje"))
@@ -34,6 +36,7 @@ public class Top : MonoBehaviour
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
             gameObject.SetActive(false);
+            _GameManager.TopGirmedi();
         }
     }
 }
