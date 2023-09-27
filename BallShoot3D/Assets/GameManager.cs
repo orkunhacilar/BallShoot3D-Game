@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
     public GameObject FirePoint;
     [SerializeField] private float TopGucu;
     int AktifTopIndex;
+    public Animator _TopAtar;
+    public ParticleSystem TopAtmaEfekt;
+    public ParticleSystem[] TopEfektleri;
+    int AktifTopEfektIndex;
+
     [Header("LEVEL AYARLARI")]
     [SerializeField] private int HedefTopSayisi;
     [SerializeField] private int MevutTopSayisi;
@@ -29,9 +34,26 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AktifTopEfektIndex = 0;
+
         LevelSlider.maxValue = HedefTopSayisi;
         KalanTopSayisi_Text.text = MevutTopSayisi.ToString();
     }
+
+    public void ParcEfekt(Vector3 Pozisyon, Color Renk)
+    {
+        TopEfektleri[AktifTopEfektIndex].transform.position = Pozisyon; // topun pozisyonunu efektin pozisyonuna atiyorum.
+
+        var main = TopEfektleri[AktifTopEfektIndex].main; //particle efecktin alt basliklarina erisebilmek icin boyle yaptik.
+        main.startColor = Renk; //particle effectin start coloruna parametre olarak gelen topun rengini veriyoruz !
+
+        TopEfektleri[AktifTopEfektIndex].gameObject.SetActive(true); // ve o efeckti aciga cikariyorum
+        AktifTopEfektIndex++;
+
+        if (AktifTopEfektIndex == TopEfektleri.Length - 1) //aktiftopefektindexim Topefektlerimin sayisina gelince sifirliyorum. tekrar baslatabilmek adina efektleri
+            AktifTopIndex = 0;
+    }
+
 
     public void TopGirdi()
     {
@@ -86,6 +108,8 @@ public class GameManager : MonoBehaviour
         {
             MevutTopSayisi--;
             KalanTopSayisi_Text.text = MevutTopSayisi.ToString();
+            _TopAtar.Play("TopAtar"); //topatarin icindeki su animasyon klibini oynat
+            TopAtmaEfekt.Play(); // top atma efecktinide play yap
             Toplar[AktifTopIndex].transform.SetPositionAndRotation(FirePoint.transform.position, FirePoint.transform.rotation);
             Toplar[AktifTopIndex].SetActive(true);
 

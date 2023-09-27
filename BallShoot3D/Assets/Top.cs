@@ -17,6 +17,10 @@ public class Top : MonoBehaviour
     {
         if (other.CompareTag("Kova")){
 
+            Renderer renk = GetComponent<Renderer>(); // materialden renk almak icin once renderera erisiyorum
+
+            _GameManager.ParcEfekt(gameObject.transform.position, renk.material.color); // yazdigimiz metoda iligi parametreleri gonderiyoruz.
+
             // gameObject.transform.localPosition = Vector3.zero;
             // gameObject.transform.localPosition = Quaternion.Euler(Vector3.zero);
 
@@ -29,6 +33,10 @@ public class Top : MonoBehaviour
 
         }else if (other.CompareTag("AltObje"))
         {
+            Renderer renk = GetComponent<Renderer>(); // materialden renk almak icin once renderera erisiyorum
+
+            _GameManager.ParcEfekt(gameObject.transform.position, renk.material.color); // yazdigimiz metoda iligi parametreleri gonderiyoruz.
+
             // gameObject.transform.localPosition = Vector3.zero;
             // gameObject.transform.localPosition = Quaternion.Euler(Vector3.zero);
 
