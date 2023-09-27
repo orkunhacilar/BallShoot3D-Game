@@ -2277,3 +2277,65 @@ Start importing Assets/Sprite/UI2 (2)/Ekstra/CevirmeOkuSol.png using Guid(d48302
  -> (artifact id: '34d75da640b6daa50599ec061356ba0a') in 0.030466 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3433.605863 seconds.
+  path: Assets/Sprite/UI2 (2)/Paneller/durdurma.png
+  artifactKey: Guid(69e1e62538fbc4cf4a3d7847baa74477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/Paneller/durdurma.png using Guid(69e1e62538fbc4cf4a3d7847baa74477) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '3e779ea902bacd893be7f3dc06e6b271') in 0.032727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.445572 seconds.
+  path: Assets/Sprite/UI2 (2)/Paneller/durdurma.png
+  artifactKey: Guid(69e1e62538fbc4cf4a3d7847baa74477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/Paneller/durdurma.png using Guid(69e1e62538fbc4cf4a3d7847baa74477) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '2faf3b0bde2c1da983a23ba5eeec5203') in 0.029637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 131.822228 seconds.
+  path: Assets/Sprite/UI2 (2)/iconlar/ayarlar.png
+  artifactKey: Guid(a1ae95fc7e46b477b82f19320e53d9b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/iconlar/ayarlar.png using Guid(a1ae95fc7e46b477b82f19320e53d9b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'd26068a85b938045c7a9bd58749b43cb') in 0.008122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.999627 seconds.
+  path: Assets/Sprite/UI2 (2)/iconlar
+  artifactKey: Guid(261c7725f875d4e16a87fd019044055e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/iconlar using Guid(261c7725f875d4e16a87fd019044055e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5585f8f5707d01376277a7da496398aa') in 0.000456 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.366941 seconds.
+  path: Assets/Sprite/UI2 (2)/iconlar/anamenu.png
+  artifactKey: Guid(a51ff4b8f5b4e48d39e450ad21204d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/iconlar/anamenu.png using Guid(a51ff4b8f5b4e48d39e450ad21204d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '1fe318b02267b8c9e99c69e188d9c8cf') in 0.007654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.235251 seconds.
+  path: Assets/Sprite/UI2 (2)/iconlar/button.png
+  artifactKey: Guid(49a0513996be24eb28f1ed4e200c08ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/iconlar/button.png using Guid(49a0513996be24eb28f1ed4e200c08ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '2c7f2395d8b6933e9e3770a1a6ef272d') in 0.008129 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.639399 seconds.
+  path: Assets/Sprite/UI2 (2)/iconlar/button.png
+  artifactKey: Guid(49a0513996be24eb28f1ed4e200c08ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/iconlar/button.png using Guid(49a0513996be24eb28f1ed4e200c08ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '338c1216d203078c87faf8dff1cd816b') in 0.012081 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
