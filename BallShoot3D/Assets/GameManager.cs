@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -17,6 +18,12 @@ public class GameManager : MonoBehaviour
     public int GirenTopSayisi;
     public Slider LevelSlider;
     public TextMeshProUGUI KalanTopSayisi_Text;
+
+    [Header("UI AYARLARI")]
+    public GameObject[] Paneller;
+    public TextMeshProUGUI YildizSayisi;
+    public TextMeshProUGUI Kazandin_LevelSayisi;
+    public TextMeshProUGUI Kaybettin_LevelSayisi;
 
 
     // Start is called before the first frame update
@@ -35,19 +42,23 @@ public class GameManager : MonoBehaviour
 
         if (GirenTopSayisi == HedefTopSayisi)
         {
-            //Top atma islevini kitleyecegiz.
-            Debug.Log("Kazandin");
+            PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex + 1); //lv gecersen Level stringine bir sonraki lvnin sceneindexini ata
+            PlayerPrefs.SetInt("Yildiz", PlayerPrefs.GetInt("Yildiz") + 15);
+            YildizSayisi.text = PlayerPrefs.GetInt("Yildiz").ToString();
+            Kazandin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
+            Paneller[1].SetActive(true);
         }
 
         if (MevutTopSayisi == 0 && GirenTopSayisi != HedefTopSayisi)
         {
-            Debug.Log("Kaybettin");
-            Debug.Log("Kaybettin");
+            Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
+            Paneller[2].SetActive(true);
         }
 
         if ((MevutTopSayisi + GirenTopSayisi) < HedefTopSayisi)
         {
-            Debug.Log("Kaybettin");
+            Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
+            Paneller[2].SetActive(true);
         }
     }
 
@@ -57,11 +68,13 @@ public class GameManager : MonoBehaviour
 
         if(MevutTopSayisi == 0)
         {
-            Debug.Log("Kaybettin");
+            Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
+            Paneller[2].SetActive(true);
         }
         if ((MevutTopSayisi + GirenTopSayisi) < HedefTopSayisi)
         {
-            Debug.Log("Kaybettin");
+            Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
+            Paneller[2].SetActive(true);
         }
     }
 
@@ -90,6 +103,37 @@ public class GameManager : MonoBehaviour
                 AktifTopIndex++;
         }
 
+    }
+
+    public void OyunuDurdur()
+    {
+        Paneller[0].SetActive(true);
+        Time.timeScale = 0; // oyununu durdurmak icin zamani durduruyoruz.
+    }
+
+    public void PanellerIcinButonIslemi(string islem)
+    {
+        switch (islem)
+        {
+            case "Devamet":
+                Time.timeScale = 1;
+                Paneller[0].SetActive(false);
+                break;
+            case "Cikis":
+                Application.Quit();
+                break;
+            case "Ayarlar":
+                break;
+            case "Tekrar":
+                Time.timeScale = 1;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // aktif olan sahneyi bir daha yukle
+                break;
+            case "Birsonraki":
+                Time.timeScale = 1;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // aktif olan sahneyi bir daha yukle
+                break;
+
+        }
     }
 
 

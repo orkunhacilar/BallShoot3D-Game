@@ -2339,3 +2339,61 @@ Start importing Assets/Sprite/UI2 (2)/iconlar/button.png using Guid(49a0513996be
  -> (artifact id: '338c1216d203078c87faf8dff1cd816b') in 0.012081 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1029.698825 seconds.
+  path: Assets/Sprite/UI2 (2)/iconlar/anamenu.png
+  artifactKey: Guid(a51ff4b8f5b4e48d39e450ad21204d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/iconlar/anamenu.png using Guid(a51ff4b8f5b4e48d39e450ad21204d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '3d8de488d745398d6ffe2b2e7f207dae') in 0.012264 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001336 seconds.
+  path: Assets/Sprite/UI2 (2)/iconlar/durdur.png
+  artifactKey: Guid(44291ed3f62fa4b0e81d8ed4b270cab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/iconlar/durdur.png using Guid(44291ed3f62fa4b0e81d8ed4b270cab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'b22e19f407bf239e654cd16ad2e067c2') in 0.011157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Sprite/UI2 (2)/Paneller/kazandin.png
+  artifactKey: Guid(515292b390e9c49dc8285b3bd8118abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/Paneller/kazandin.png using Guid(515292b390e9c49dc8285b3bd8118abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'ba2f72d9adb520906987b4bd1b9f9eac') in 0.033697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprite/UI2 (2)/iconlar/tekraroyna.png
+  artifactKey: Guid(02f449be414f5401ca6ff147bfc13d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/iconlar/tekraroyna.png using Guid(02f449be414f5401ca6ff147bfc13d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '29c7af38ab58276362dfddd7a40d6d61') in 0.010087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Sprite/UI2 (2)/Ekstra/CevirmeOkuSag.png
+  artifactKey: Guid(e10b645a2793e4973baedb3ac17c5183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/Ekstra/CevirmeOkuSag.png using Guid(e10b645a2793e4973baedb3ac17c5183) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'a0770fd7cb307c99e9c4207edf5cb460') in 0.011193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Sprite/UI2 (2)/iconlar/yildiz.png
+  artifactKey: Guid(4765c9f103d814bac97d88dfe998bac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI2 (2)/iconlar/yildiz.png using Guid(4765c9f103d814bac97d88dfe998bac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '66aee93d526ffe3219d1ec4261da6815') in 0.018348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting

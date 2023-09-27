@@ -9,10 +9,15 @@ public class AnaMenuManager : MonoBehaviour
     void Start()
     {
         if (PlayerPrefs.HasKey("Level"))
+        {
             SceneManager.LoadScene(PlayerPrefs.GetInt("Level"));
-        else
+        } else
+        {
             PlayerPrefs.SetInt("Level", 1);
+            PlayerPrefs.SetInt("Yildiz", 0);
             SceneManager.LoadScene(1);
+        }
+           
     }
 
     // Update is called once per frame
