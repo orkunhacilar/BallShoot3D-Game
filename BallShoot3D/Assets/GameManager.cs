@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         AktifTopEfektIndex++;
 
         if (AktifTopEfektIndex == TopEfektleri.Length - 1) //aktiftopefektindexim Topefektlerimin sayisina gelince sifirliyorum. tekrar baslatabilmek adina efektleri
-            AktifTopIndex = 0;
+            AktifTopEfektIndex = 0;
     }
 
 
