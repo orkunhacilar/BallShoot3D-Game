@@ -355,10 +355,10 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/AnaMenuManager.cs"
-"Assets/GameManager.cs"
-"Assets/SilindirYonet.cs"
-"Assets/Top.cs"
+"Assets/Script/AnaMenuManager.cs"
+"Assets/Script/GameManager.cs"
+"Assets/Script/SilindirYonet.cs"
+"Assets/Script/Top.cs"
 -langversion:9.0
 
 /deterministic
