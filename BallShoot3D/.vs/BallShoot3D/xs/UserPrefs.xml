@@ -1,22 +1,15 @@
 ﻿<Properties StartupConfiguration="{312B4093-CD0E-E7A3-5706-9F2A6D41D048}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9c7bbacf-755b-498d-941f-f366dd9381e4" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/GameManager.cs">
     <Files>
-      <File FileName="Assets/GameManager.cs" Line="55" Column="6" />
-      <File FileName="Assets/Top.cs" Line="47" Column="39" />
-      <File FileName="Assets/SilindirYonet.cs" Line="1" Column="1" />
-      <File FileName="Assets/AnaMenuManager.cs" Line="20" Column="12" />
+      <File FileName="Assets/Script/GameManager.cs" Line="140" Column="1" />
+      <File FileName="Assets/Script/Top.cs" Line="48" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BallShoot3D">
             <Node name="Assets" expanded="True">
-              <Node name="GameManager.cs" selected="True" />
+              <Node name="Script" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -24,5 +17,10 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="41b7be15-a20c-4531-a164-65159152868b" />
   <MultiItemStartupConfigurations />
 </Properties>

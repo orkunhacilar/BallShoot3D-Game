@@ -84,37 +84,62 @@ public class GameManager : MonoBehaviour
             Paneller[1].SetActive(true);
         }
 
-        if (MevutTopSayisi == 0 && GirenTopSayisi != HedefTopSayisi)
+
+        int sayi = 0;
+        foreach(var item in Toplar)
         {
-            DigerSesler[0].Play();
-            Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
-            Paneller[2].SetActive(true);
+            if (item.activeInHierarchy)    // siradaki top aktifmi degilmi ona bakiyoruz.
+                sayi++;
         }
 
-        if ((MevutTopSayisi + GirenTopSayisi) < HedefTopSayisi)
+        if(sayi == 0)
         {
-            DigerSesler[0].Play();
-            Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
-            Paneller[2].SetActive(true);
+            if (MevutTopSayisi == 0 && GirenTopSayisi != HedefTopSayisi)
+            {
+                DigerSesler[0].Play();
+                Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
+                Paneller[2].SetActive(true);
+            }
+
+            if ((MevutTopSayisi + GirenTopSayisi) < HedefTopSayisi)
+            {
+                DigerSesler[0].Play();
+                Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
+                Paneller[2].SetActive(true);
+            }
         }
+
+        
     }
 
     public void TopGirmedi()
     {
-       
 
-        if(MevutTopSayisi == 0)
+        int sayi = 0;
+        foreach (var item in Toplar)
         {
-            DigerSesler[0].Play();
-            Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
-            Paneller[2].SetActive(true);
+            if (item.activeInHierarchy)    // siradaki top aktifmi degilmi ona bakiyoruz.
+                sayi++;
         }
-        if ((MevutTopSayisi + GirenTopSayisi) < HedefTopSayisi)
+
+        if (sayi == 0)
         {
-            DigerSesler[0].Play();
-            Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
-            Paneller[2].SetActive(true);
+            if (MevutTopSayisi == 0)
+            {
+                DigerSesler[0].Play();
+                Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
+                Paneller[2].SetActive(true);
+            }
+            if ((MevutTopSayisi + GirenTopSayisi) < HedefTopSayisi)
+            {
+                DigerSesler[0].Play();
+                Kaybettin_LevelSayisi.text = "LEVEL : " + SceneManager.GetActiveScene().name;
+                Paneller[2].SetActive(true);
+            }
         }
+
+
+            
     }
 
     // Update is called once per frame
